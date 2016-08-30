@@ -1,7 +1,8 @@
+export interface AmlOptions {
+  comments: boolean;
+}
+
 declare namespace archieml {
-  interface AmlOptions {
-    comments: boolean;
-  }
   function load(content: string, opts?: AmlOptions): any;
 }
 
